@@ -44,7 +44,7 @@ def parse_args():
         "--voice-style",
         type=str,
         nargs="+",
-        default=["assets/voice_styles/M1.json"],
+        default=["assets/voice_styles/F1.json"],
         help="Voice style file path(s). Can specify multiple files for batch processing",
     )
     parser.add_argument(
@@ -52,7 +52,13 @@ def parse_args():
         type=str,
         nargs="+",
         default=[
-            "This morning, I took a walk in the park, and the sound of the birds and the breeze was so pleasant that I stopped for a long time just to listen."
+            """He was small-ish and spare, with brown hair
+ rather too regularly waived
+ and a strong brown beard cut to a point.
+ His double-breasted suit of navy blue and his socks tie.
+ Chin fats off all scrubulously matched
+ were a trifle more poetry might
+ approve"""
         ],
         help="Text(s) to synthesize. Can specify multiple texts for batch processing",
     )
