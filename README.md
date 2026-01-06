@@ -1,16 +1,19 @@
 # Supertonic — Lightning Fast, On-Device TTS
 
-[![Demo](https://img.shields.io/badge/🤗%20Hugging%20Face-Demo-yellow)](https://huggingface.co/spaces/Supertone/supertonic#interactive-demo)
-[![Models](https://img.shields.io/badge/🤗%20Hugging%20Face-Models-blue)](https://huggingface.co/Supertone/supertonic)
+[![v2 Demo](https://img.shields.io/badge/🤗%20v2-Demo-yellow)](https://huggingface.co/spaces/Supertone/supertonic-2)
+[![v2 Models](https://img.shields.io/badge/🤗%20v2-Models-blue)](https://huggingface.co/Supertone/supertonic-2)
+[![v1 Demo](https://img.shields.io/badge/🤗%20v1%20(old)-Demo-lightgrey)](https://huggingface.co/spaces/Supertone/supertonic#interactive-demo)
+[![v1 Models](https://img.shields.io/badge/🤗%20v1%20(old)-Models-lightgrey)](https://huggingface.co/Supertone/supertonic)
 
 <p align="center">
-  <img src="img/Supertonic_IMG_v02_4x.webp" alt="Supertonic Banner">
+  <img src="img/supertonic_preview_0.1.jpg" alt="Supertonic Banner">
 </p>
 
 **Supertonic** is a lightning-fast, on-device text-to-speech system designed for **extreme performance** with minimal computational overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.
 
 ### 📰 Update News
 
+- **2026.01.06** - 🎉 **Supertonic 2** released with multilingual support! Now supports English (`en`), Korean (`ko`), Spanish (`es`), Portuguese (`pt`), and French (`fr`). [Demo](https://huggingface.co/spaces/Supertone/supertonic-2) | [Models](https://huggingface.co/Supertone/supertonic-2)
 - **2025.12.10** - Added `supertonic` PyPI package! Install via `pip install supertonic`. For details, visit [supertonic-py documentation](https://supertone-inc.github.io/supertonic-py)
 - **2025.12.10** - Added [6 new voice styles](https://huggingface.co/Supertone/supertonic/tree/b10dbaf18b316159be75b34d24f740008fddd381) (M3, M4, M5, F3, F4, F5). See [Voices](https://supertone-inc.github.io/supertonic-py/voices/) for details
 - **2025.12.08** - Optimized ONNX models via [OnnxSlim](https://github.com/inisis/OnnxSlim) now available on [Hugging Face Models](https://huggingface.co/Supertone/supertonic)
@@ -43,7 +46,7 @@ https://github.com/user-attachments/assets/64980e58-ad91-423a-9623-78c2ffc13680
 
 ---
 
-> 🎧 **Try it now**: Experience Supertonic in your browser with our [**Interactive Demo**](https://huggingface.co/spaces/Supertone/supertonic#interactive-demo), or get started with pre-trained models from [**Hugging Face Hub**](https://huggingface.co/Supertone/supertonic)
+> 🎧 **Try it now**: Experience Supertonic in your browser with our [**Interactive Demo**](https://huggingface.co/spaces/Supertone/supertonic-2), or get started with pre-trained models from [**Hugging Face Hub**](https://huggingface.co/Supertone/supertonic-2)
 
 ## Why Supertonic?
 
@@ -92,7 +95,7 @@ Before running the examples, download the ONNX models and preset voices, and pla
 > - Generic: see `https://git-lfs.com` for installers
 
 ```bash
-git clone https://huggingface.co/Supertone/supertonic assets
+git clone https://huggingface.co/Supertone/supertonic-2 assets
 ```
 
 ### Quick Start
@@ -428,9 +431,9 @@ This paper describes the self-purification technique for training flow matching 
 
 This project's sample code is released under the MIT License. - see the [LICENSE](https://github.com/supertone-inc/supertonic?tab=MIT-1-ov-file) for details.
 
-The accompanying model is released under the OpenRAIL-M License. - see the [LICENSE](https://huggingface.co/Supertone/supertonic/blob/main/LICENSE) file for details.
+The accompanying model is released under the OpenRAIL-M License. - see the [LICENSE](https://huggingface.co/Supertone/supertonic-2/blob/main/LICENSE) file for details.
 
 This model was trained using PyTorch, which is licensed under the BSD 3-Clause License but is not redistributed with this project. - see the [LICENSE](https://docs.pytorch.org/FBGEMM/general/License.html) for details.
 
-Copyright (c) 2025 Supertone Inc.
+Copyright (c) 2026 Supertone Inc.
 
