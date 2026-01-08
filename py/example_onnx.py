@@ -52,7 +52,8 @@ def parse_args():
         type=str,
         nargs="+",
         default=[
-            "This morning, I took a walk in the park, and the sound of the birds and the breeze was so pleasant that I stopped for a long time just to listen."
+            """Je demande pardon aux enfants d'avoir dédié ce livre à une grande personne. J'ai une excuse sérieuse: cette grande personne est le meilleur ami que j'ai au monde. J'ai une autre excuse: cette grande personne peut tout comprendre, même les livres pour enfants"""
+            # "This morning, I took a walk in the park, and the sound of the birds and the breeze was so pleasant that I stopped for a long time just to listen."
         ],
         help="Text(s) to synthesize. Can specify multiple texts for batch processing",
     )
@@ -60,7 +61,7 @@ def parse_args():
         "--lang",
         type=str,
         nargs="+",
-        default=["en"],
+        default=["fr"],
         help="Language(s) of the text(s). Can specify multiple languages for batch processing",
     )
     parser.add_argument(

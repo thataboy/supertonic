@@ -1,0 +1,70 @@
+{
+  "phrases": [
+    {
+      "text": "my name is luu",
+      "category": "intro"
+    }
+  ],
+  "history": [
+    {
+      "timestamp": "2025-12-25 18:07",
+      "text": "my name is luu",
+      "voice": "M3",
+      "speed": 1.15
+    },
+    {
+      "timestamp": "2025-12-25 18:07",
+      "text": "hello",
+      "voice": "M3",
+      "speed": 1.15
+    },
+    {
+      "timestamp": "2025-12-25 18:07",
+      "text": "hello",
+      "voice": "M3",
+      "speed": 1.15
+    },
+    {
+      "timestamp": "2025-12-25 18:04",
+      "text": "hello",
+      "voice": "M3",
+      "speed": 1.15
+    },
+    {
+      "timestamp": "2025-12-25 18:04",
+      "text": "hello there  how is it going",
+      "voice": "M3",
+      "speed": 1.15
+    },
+    {
+      "timestamp": "2025-12-25 18:04",
+      "text": "hello there",
+      "voice": "M3",
+      "speed": 1.15
+    },
+    {
+      "timestamp": "2025-12-25 18:04",
+      "text": "hello there",
+      "voice": "M3",
+      "speed": 1.15
+    },
+    {
+      "timestamp": "2025-12-25 18:04",
+      "text": "hello there",
+      "voice": "M3",
+      "speed": 1.15
+    },
+    {
+      "timestamp": "2025-12-25 18:04",
+      "text": "hello there",
+      "voice": "M3",
+      "speed": 1.15
+    },
+    {
+      "timestamp": "2025-12-25 18:03",
+      "text": "hello there",
+      "voice": "F1",
+      "speed": 1.05
+    }
+  ]
+}
