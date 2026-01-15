@@ -243,6 +243,40 @@ class TextToSpeech:
                 dur_cat += dur_onnx + silence_duration
         return wav_cat, dur_cat
 
+    def stream(
+        self,
+        text: str,
+        lang: str,
+        style: Style,
+        total_step: int,
+        speed: float = 1.05,
+        silence_duration: float = 0.3,
+    ):
+        """
+        Generator that yields audio chunks as they are synthesized.
+
+        Yields:
+            wav (np.ndarray): Audio chunk for a segment.
+            duration (float): Duration of the chunk in seconds.
+        """
+        assert (
+            style.ttl.shape[0] == 1
+        ), "Single speaker text to speech only supports single style"
+
+        text_list = chunk_text(text)
+        silence = np.zeros(
+            (1, int(silence_duration * self.sample_rate)), dtype=np.float32
+        )
+
+        for i, text_chunk in enumerate(text_list):
+            wav, dur_onnx = self._infer([text_chunk], [lang], style, total_step, speed)
+            yield wav, dur_onnx
+
+            # Add silence between chunks (except possibly after the last one,
+            # but original code added it between concatenations)
+            if i < len(text_list) - 1:
+                yield silence, silence_duration
+
     def batch(
         self,
         text_list: list[str],
